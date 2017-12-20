@@ -4,5 +4,5 @@ Has Live reload js script
 browser-sync recommended
 
 
- ``` git clone https://github.com/Tor020/LinkedFileStructureHTMLBP```
+ ``` git clone https://tor020.github.io/Sectioned-Vue-Notes/```
 

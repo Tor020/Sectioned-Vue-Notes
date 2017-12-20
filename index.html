@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Template</title>
+  <script type="text/javascript" src="https://tor020.github.io/livejs/live.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css  ">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+<!-- spinOffs -->
+  <div style = "max-width: 20em; margin:0 auto;">
+
+    <a style = " margin:0 auto; text-align:center;" href="spinoff.html">spinoff</a>
+  </div>
+<!-- Container1 -->
+  <div class="container">
+    <div id="root1" style="border:solid 2px black; padding:5em; width:100%;">
+
+
+      <h4>This is the v-model example, it's best for inputs only and creates two way databindings</h4>
+
+      <input type="text" id='input' v-model="message"> {{message}}
+
+
+    </div>
+  </div>
+
+<!-- Container2 -->
+  <div class="container">
+    <div id="root2" style="border:solid 2px black; padding:5em; width:100%;">
+      <h4>This is a list that uses databinding with v-model on the Text-input that binds data.newName to the piece of data within the text-input the documentation calls this <a href="http://devdocs.io/vue~2/guide/list">List Rendering</a>  </h4>
+
+      <ul>
+        <li v-for="name in names" :key="name.id" v-text="name"><!--{{name}}--></li>
+      </ul>
+
+      <input tab = '1' @keyup.enter="addName()" type="text" v-model='newName'>
+      <button tab = '2' @keyup.enter="addName()">put it in</button>
+      <button tab = '3' @click="reName()">take it Off</button>
+
+    </div>
+  </div>
+
+<!-- Container3 -->
+  <div class="container">
+    <div id="root3" style="border:solid 2px black; padding:5em; width:100%;">
+        <h4> <a href="https://laracasts.com/series/learn-vue-2-step-by-step/episodes/5?autoplay=true">Attribute and Class Binding</a> </h4>
+
+
+    </div>
+  </div>
+
+<!-- Container4 -->
+  <div class="container">
+    <div id="root4" style="border:solid 2px black; padding:5em; width:100%;">
+        <h4>  </h4>
+
+
+    </div>
+  </div>
+
+<!-- Container5 -->
+  <div class="container">
+    <div id="root5" style="border:solid 2px black; padding:5em; width:100%;">
+        <h4>  </h4>
+
+
+    </div>
+  </div>
+
+<!-- Container6 -->  
+  <div class="container">
+      <div id="root6" style="border:solid 2px black; padding:5em; width:100%;">
+          <h4>  </h4>
+  
+  
+      </div>
+    </div>
+
+<!-- Container7 -->
+  <div class="container">
+    <div id="root7" style="border:solid 2px black; padding:5em; width:100%;">
+        <h4>  </h4>
+  
+  
+    </div>
+  </div>
+
+<!-- Container8 -->
+  <div class="container">
+      <div id="root8" style="border:solid 2px black; padding:5em; width:100%;">
+          <h4>  </h4>
+  
+  
+      </div>
+  </div>
+
+<!-- Container9 -->
+  <div class="container">
+      <div id="root9" style="border:solid 2px black; padding:5em; width:100%;">
+          <h4>  </h4>
+  
+  
+      </div>
+  </div>
+
+<!-- Container10 -->
+  <div class="container">
+      <div id="root10" style="border:solid 2px black; padding:5em; width:100%;">
+          <h4>  </h4>
+  
+  
+      </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.9/vue.js"></script>
+  <script src='scripts/main.js'></script>
+</body>
+
+</html>

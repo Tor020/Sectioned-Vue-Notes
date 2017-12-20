@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Template</title>
+  <script type="text/javascript" src="https://tor020.github.io/livejs/live.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css  ">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+
+  <div class="container">
+
+    <div id='example-3'>
+      <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+      <label for="jack">Jack</label>
+      <input type="checkbox" id="john" value="John" v-model="checkedNames">
+      <label for="john">John</label>
+      <input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
+      <label for="mike">Mike</label>
+      <br>
+      <span>Checked names: {{ checkedNames }}</span>
+
+    </div>
+  </div>
+<hr>
+<div class="container"> <div id="fk">
+    <input type="checkbox" id="checkbox" v-model="checked">
+    <label for="checkbox">{{checked}}</label>
+  </div>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.9/vue.js"></script>
+  <script>
+    new Vue({
+      el: '#example-3',
+      data: {
+        checkedNames: []
+      }
+    })
+    new Vue({
+      el: '#fk',
+      data: {
+        checked:'Boolean Value Here'
+      }
+    })
+  </script>
+</body>
+
+</html>
